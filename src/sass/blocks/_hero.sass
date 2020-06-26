@@ -1,0 +1,84 @@
+.hero 
+  background: url('../img/hero/hero-image.jpg') no-repeat
+
+  background-size: cover
+  height: 530px
+  width: 100%
+  padding: 0
+  position: relative
+  text-align: center
+  &-text 
+    margin-top: 0
+    padding-top: 185px
+    &__title 
+      margin-top: 0
+      font-size: 54px
+      line-height: 80px
+      color: white
+      +bold
+
+@media (max-width: 1200px) 
+  .hero 
+    background-size: 100%, cover
+    height: auto
+    top: 0px 
+    display: block
+    visibility: inherit 
+    overflow: hidden
+    &-text 
+      padding-top: 136px
+      &__title 
+        font-size: 44px
+@media (max-width: 1080px) 
+  .hero 
+    background-size: 100%, cover
+    &-text 
+      padding-top: 85px
+      &__title 
+        font-size: 38px
+        line-height: 60px
+      
+@media (max-width: 820px) 
+  .hero 
+    &-text 
+      &__title 
+        font-size: 34px
+        line-height: 48px
+@media (max-width: 780px) 
+  .hero 
+    &-text
+      padding-top: 85px 
+      &__title 
+        font-size: 28px    
+
+@media (max-width: 650px)
+  .hero 
+    &-text 
+      padding-top: 60px
+      &__title 
+        font-size: 26px
+        line-height: 47px
+@media (max-width: 580px)
+  .hero 
+    &-text 
+      &__title 
+        font-size: 26px
+        line-height: 40px
+@media (max-width: 520px)
+  .hero 
+    &-text 
+      padding-top: 40px
+      &__title 
+        font-size: 22px 
+        line-height: 30px 
+@media (max-width: 390px)
+  .hero 
+    &-text 
+      &__title 
+        font-size: 20px   
+@media (max-width: 320px)
+  .hero 
+    &-text 
+      padding-top: 25px    
+      &__title 
+        font-size: 18px              

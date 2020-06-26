@@ -1,0 +1,148 @@
+.footer
+  position: relative
+  background-color: black
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    color: white  
+  &__button
+    border-radius: 10px
+    border: 1px solid black
+    background-color: white
+    padding: 15px 25px 
+    outline: none
+    width: 225px
+    font-size: 20px
+    +bold
+    margin-bottom: 20px
+    text-decoration: none 
+    &:hover 
+      cursor: pointer 
+      background-color: lighten(grey, 30%)
+.about
+  &-block
+    font-size: 14px
+    line-height: 16px
+    +light
+  &__title
+    font-size: 14px
+    line-height: 33px
+    font-family: 'Oswald Bold'
+  &__button
+    text-decoration: none
+    outline: none  
+    color: #000
+.form
+  &-block
+    font-size: 14px
+    line-height: 50px
+    +light
+  &__title
+    font-size: 14px
+    font-family: 'Oswald Bold'
+    line-height: 20px
+  &-dialog__input  
+    position: absolute
+  &__button 
+    position: absolute 
+    margin-left: 162px
+    border-radius: 10px
+    background-color: #ba9050
+    border: none 
+    outline: none
+    width: 50px  
+    height: 35px
+    &:hover 
+      cursor: pointer
+.contacts 
+  &-block
+  &__title
+    font-size: 14px
+    font-family: 'Oswald Bold'
+    line-height: 35px
+  &-list 
+    padding: 0
+    list-style: none
+    &__icon
+      width: 24px
+      height: 23px
+      margin-right: 15px
+      background-color: white
+    &__item
+      display: flex
+      margin-bottom: 7px
+    &__phone 
+      display: block
+      text-decoration: none  
+      outline: none   
+      color: white 
+      +light
+    &__text
+      color: white 
+      outline: none
+      text-decoration: none 
+      +light     
+  
+@media (max-width: 1200px)     
+  .footer
+    &-block
+      padding: 0
+@media (max-width: 780px)   
+  .footer
+    &-block
+      padding: 20px
+      display: flex
+      justify-content: space-around
+    &__button
+      font-size: 18px  
+      margin-top: 0  
+
+  .about
+    &-block
+      max-width: 50%   
+      font-size: 12px
+      line-height: 13px 
+    
+  .contacts
+    &-block
+      max-width: 50% 
+    &-list
+      &__text
+        font-size: 16px
+        line-height: 20px   
+
+  .form
+    &-block
+      margin: auto
+      margin-bottom: 80px
+        max-width: 50%
+        position: absolute
+        margin-top: 80px
+        font-size: 0px
+    &__title
+      font-size: 0px
+    &__but
+      padding-left: 30px     
+
+@media (max-width: 580px)
+  .footer
+    &-block 
+      flex-direction: column 
+  .about
+    &-block
+      max-width: 100%
+      text-align: center
+
+  .contacts
+    &-block
+      max-width: 100%
+      text-align: center  
+    &-list 
+      text-align: center
+      display: inline-block
+  .form
+    &-block
+      max-width: 100% 
+    &__but
+      padding-left: 30px

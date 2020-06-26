@@ -1,0 +1,116 @@
+.offer
+  padding: 50px 0
+  margin-bottom: 35px
+  &-block 
+    display: flex 
+    
+  &-image
+      flex-basis: 50%
+      position: relative
+  &-text 
+    flex-basis: 50% 
+    padding-left: 50px
+    &__title 
+      font-size: 34px
+      line-height: 55px
+      margin: 0
+      +reg
+    &__subtitle 
+      display: inline-block
+      font-size: 20px
+      margin: 25px 0
+    &__description
+      color: #484848
+  &__button
+    border-radius: 10px
+    border: 1px solid black
+    background-color: white
+    padding: 15px 25px 
+    outline: none
+    width: 225px
+    font-size: 20px
+    +bold
+    margin-top: 30px
+
+    &:hover 
+      cursor: pointer 
+      background-color: lighten(grey, 30%)         
+#one
+  position: absolute
+#two
+  position: absolute 
+  text-align: center
+  margin-top: 18px
+  margin-left: 30px 
+      
+@media (max-width: 1200px) 
+  .offer
+    &-block 
+      flex-direction: column
+    &-image 
+    &-text 
+      padding-left: 440px
+      &__title 
+        font-size: 26px
+        line-height: 34px
+        margin-bottom: 10px
+      &__subtitle 
+        font-size: 16px
+        margin: 10px 0
+      &__description
+        font-size: 14px
+        margin-bottom: 10px
+  #one
+    max-width: 50%
+  #two
+    position: absolute
+    text-align: center
+    margin-top: 19px
+    margin-left: 54px
+    max-width: 36%
+@media (max-width: 780px) 
+  .offer
+    margin-bottom: 0
+    text-align: center
+    &-image
+      position: absolute 
+    &-text
+      padding: 0 
+      max-width: 600px
+      &__title 
+        font-size: 22px
+        line-height: 34px
+        margin-bottom: 10px
+      &__subtitle 
+        font-size: 16px
+        margin: 10px 0
+    &__button
+      font-size: 16px  
+      padding: 10px 25px 
+      width: 170px
+      margin-top: 15px
+
+@media (max-width: 580px)
+  .offer 
+    padding: 20px 0 30px
+    &-block 
+      padding-top: 2px
+    &-text 
+      padding-left: 3px
+      padding-right: 0
+      &__title 
+        font-size: 20px
+        margin-bottom: 5px 
+        line-height: 31px
+      &__subtitle 
+        font-size: 16px 
+        padding-left: 3px
+      &__description
+        font-size: 14px  
+@media (max-width: 520px)
+  .offer
+    &__tittle
+      font-size: 20px 
+    &__subtitle 
+      font-size: 16px 
+  

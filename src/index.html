@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta author="Сомкина Оксана">
+  <meta description="Умный дом">
+  <meta keywords="Умный дом">
+  <title>smart-home</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+
+
+
+</head>
+
+<body>
+
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+          <div class="hero-text">
+            <h1 class="hero-text__title wow zoomIn" data-wow-delay="0.2s" >УМНЫЙ ДОМ МОЖЕТ БЫТЬ<br> ДОСТУПНЫМ</h1>
+          </div>
+      </div>
+    </section>
+    <!--/hero-->
+    <section class="offer">
+      <div class="container">
+        <div class="offer-block">
+          <div class="offer-image wow zoomIn" data-wow-delay="0.3s">
+              <img  id="one" src="img/offer/offer-image.jpg" alt="Логo">
+              <img id="two" src="img/offer/logoza.ru-01.png" alt="Логотип">
+            
+          </div>
+          <div class="offer-text">
+            <h2 class="offer-text__title wow zoomIn" data-wow-delay="0.4s">Несколько Слов о Нас</h2>
+            <span class="offer-text__subtitle wow zoomIn" data-wow-delay="0.5s">Мы команда - интегратор систем Умного дома, специалисты в области автоматизации квартир и домов.</span>
+            <p class="offer-text__description wow zoomIn" data-wow-delay="0.5s">Цель нашей работы сделать Умный дом более доступным для потребителя, не только в высоком ценовом сегменте. Сотрудничаем
+            с дизайнерами и отделочниками и прорабами.</p>
+            <button class="button offer__button wow zoomIn" data-wow-delay="0.5s" id="button">связаться</button>
+          </div>
+          <div class="success"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="video">
+      <video controls autoplay loop playsinline
+        height="auto" background-size="cover"
+        style="width: 100%; height: auto; position: relative; top: 0px; display: block; visibility: inherit; overflow: hidden;"
+        id="video">
+        <source src="video/home.mp4" type="video/mp4">
+        <source src="video/home.ogv" type="video/ogv">
+        <source src="video/home.webm" type="video/webm">
+      </video>
+    </div>
+
+
+    
+
+    <section class="section steps">
+      <div class="container">
+        <h2 class="section-title steps__title wow zoomIn" data-wow-delay="0.1s">Направления</h2>
+        
+        <div class="cards">
+          <div class="card steps__card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="card__image"><img src="img/steps/bulb.png" alt=""></div>
+            <h4 class="card__title">Освещение</h4>
+            <div class="card__text">
+              <p>Cоздадим индивидуальные сценарии освещения :<br>
+              умный свет, голосовое управление,<br>
+              диммирование, RGB, управление подсветкой,<br>
+              функция «Выключить все».</p>
+            </div>
+          </div>
+          <div class="card steps__card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="card__image"><img src="img/steps/fire-alarm.png" alt=""></div>
+            <h4 class="card__title">Безопасность</h4>
+            <div class="card__text">
+               
+              <p>Составляющие системы безопасности Умного дома:<br>
+              защита от протечек, пожарная сигнализация,<br>
+              оповещение об утечке газа, охрана,<br>
+              видеонаблюдение, имитация присутствия.</p>
+            </div>
+          </div>
+          <div class="card steps__card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card__image"><img src="img/steps/conditioner.png" alt=""></div>
+            <h4 class="card__title">Климат</h4>
+            <div class="card__text">
+              
+              <p>С помощью системы можно контролировать<br>
+              уровень температурного режима, а также<br>
+              влажность в доме: кондиционер,<br>
+              увлажнитель, вытяжки, теплый пол.</p>
+            </div>
+          </div>
+          <div class="card steps__card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card__image"><img src="img/steps/smartphone.png" alt=""></div>
+            <h4 class="card__title">Управление шторами</h4>
+            <div class="card__text">
+              
+              <p>«Умные шторы» - такая интеллектуальная система<br>
+              управления, которая позволяет создать высокий<br>
+              уровень комфорта, при помощи автоматизации,<br>
+              регулировать уровень освещения,<br>
+              не вставая со своего места.</p>
+            </div>
+          </div>
+          <div class="card steps__card wow fadeInUp" data-wow-delay="0.5s">
+            <div class="card__image"><img src="img/steps/smart-home.png" alt=""></div>
+            <h4 class="card__title">Мультирум</h4>
+            <div class="card__text">
+              
+              <p>Объединяет в единую систему: телевизор,<br>
+              smart - tv, звук. Создадим индивидуальные<br>
+              сценарии под ваши потребности.</p>
+            </div>
+          </div>
+          <div class="card steps__card wow fadeInUp" data-wow-delay="0.6s">
+            <div class="card__image"><img src="img/steps/cctv.png" alt=""></div>
+            <h4 class="card__title">Другие функции</h4>
+            <div class="card__text">
+              
+              <p>Возможна реализация различного функционала :<br>
+              управление аквариумом (фильтр, свет),<br>
+              сценарии геолокации, водонагреватель.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section steps-->
+    <section class="section brif">
+      <div class="container">
+        <div class="brif-block">
+          
+            <h3 class="brif__title wow zoomIn" data-wow-delay="0.2s">Сотрудничаем с дизайнерами интерьеров,
+            прорабами и отделочными организациями,
+            хорошие условия.</h3>
+            
+        </div>
+      </div>
+    </section>
+    <!--section brif-->
+    <section class="section partners">
+      <div class="container">
+    
+        <div class="partners-block">
+          <div class="partners">
+            <div class="partners__image">
+              <img src="img/partners/WB.png" alt="">
+            </div>
+    
+          </div>
+          <div class="partners">
+            <div class="partners__image">
+              <img src="img/partners/ibm.png" alt="">
+            </div>
+    
+          </div>
+          <div class="partners">
+            <div class="partners__image">
+              <img src="img/partners/zigbee.png" alt="">
+            </div>
+    
+          </div>
+          <div class="partners">
+            <div class="partners__image" id="ikea">
+              <img src="img/partners/IKEA.png" alt="">
+            </div>
+    
+          </div>
+          <div class="partners">
+            <div class="partners__image">
+              <img src="img/partners/apple.png" alt="">
+            </div>
+    
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section partners-->
+  </main>
+  
+
+  <footer class="footer">
+    <div class="footer-block">
+      
+      <div class="about-block">
+        <div class="about">
+            <h3 class="about__title">О НАС\ПРЕИМУЩЕСТВА</h3>
+            <p>Доступная цена в городе на установку<br> и материалы, интеграция в уже готовый ремонт<br> без замены проводки и коммуникаций,<br> управление через приложение на телефоне,<br> широкий функционал.</p>
+          </div>
+          <button class="button footer__button" id="button">
+            <a href="https://wa.me/79052777282" class="about__button">связаться</a></button>
+        </div>  
+        <div class="success"></div>
+      <div class="contacts-block">
+          <div class="contacts">
+            <h3 class="contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a href="tel:+7(905)2777282" class="contacts-list__icon"><img src="img/footer/telephone.png" alt=""></a>
+                <span>
+                  <a href="tel:+7(905)2777282" class="contacts-list__phone">+7 905 2777282 </a>
+                </span>
+              </li>
+              
+              <li class="contacts-list__item">
+                <a href="https://wa.me/79052777282" class="contacts-list__icon"><img src="img/footer/whatsapp.png" alt=""></a>
+                <span>
+                  <a href="https://wa.me/79052777282" class="contacts-list__phone">+7 905 2777282 </a>
+                </span>
+              </li>
+              
+              <li class="contacts-list__item">
+                <a href="https://www.instagram.com/oksana_somkina/" class="contacts-list__icon"><img src="img/footer/instagram.png" alt=""></a>
+                <a href="https://www.instagram.com/oksana_somkina/"  class="contacts-list__text">@oksana_somkina
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a a href="mailto:mail smart-home@bk.ru"  class="contacts-list__icon"><img src="img/footer/gmail1.png" alt=""></a>
+                <a a href="mailto:mail smart-home@bk.ru" class="contacts-list__text">smart-home@bk.ru</a>
+                  
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id='modal'>
+
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <div class="modal-column">
+        <div class="modal-content"></div>
+      </div>
+      <div class="modal-column">
+      
+        <span class="modal-dialog__subtitle">Заполните форму и мы с вами свяжемся</span>
+        <form action="#" class="form modal-dialog__form" id="modal-form">
+          <input type="text" name="name" required class="input modal-dialog__input name" placeholder="Ваше имя"
+            id="modal-name">
+          <input type="phone" name="phone" required class="input modal-dialog__input phone" placeholder="Ваш телефон"
+            id="modal-phone">
+            <input type="message" name="message" required class="input modal-dialog__input message" placeholder="Ваш вопрос" id="modal-message">
+          <button class="button modal__button">связаться
+          </button>
+        </form>
+        <div class="success"></div>
+      </div>
+
+    </div>
+    <!--/modal-dialog-->
+  </div>
+  <!--/modal-->
+
+
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.vide.min.js"></script>
+  <script src="src/jquery.youtubebackground.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+  <script>
+    new WOW().init(); /*инициализация wow.js*/
+  </script>
+
+
+
+
+
+
+  
+</body>
+
+</html>
